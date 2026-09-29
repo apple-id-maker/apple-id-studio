@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apple ID Studio</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:linear-gradient(135deg,#f5f7ff,#eef4ff);color:#111}
+.hero{padding:55px 20px;text-align:center;background:linear-gradient(135deg,#111827,#2563eb);color:white}
+.logo{font-size:58px}.hero h1{margin:8px 0;font-size:38px}.hero p{font-size:19px;margin:10px 0 25px}
+.btn{display:inline-block;padding:14px 25px;border-radius:30px;background:#25D366;color:white;text-decoration:none;font-weight:bold}
+.card{max-width:600px;margin:30px auto;padding:30px 22px;background:white;border-radius:22px;box-shadow:0 10px 30px #0001;text-align:center}
+.price{font-size:34px;font-weight:bold;color:#2563eb;margin:15px}.features{display:grid;gap:12px;margin:25px 0}.feature{padding:14px;background:#f3f6ff;border-radius:12px}
+.form{margin-top:25px;text-align:right}.form input{width:100%;padding:13px;margin:7px 0;border:1px solid #ddd;border-radius:10px;font-size:15px}
+.submit{border:0;cursor:pointer;width:100%;padding:14px;border-radius:12px;background:#2563eb;color:white;font-size:17px;font-weight:bold;margin-top:8px}
+footer{text-align:center;padding:25px;color:#666;font-size:14px}
+</style>
+</head>
+<body>
+<section class="hero">
+<div class="logo">🍎</div>
+<h1>Apple ID Studio</h1>
+<p>Personal Apple ID Creation Service</p>
+<a class="btn" href="https://wa.me/923088748583?text=Assalam%20o%20Alaikum%2C%20mujhe%20Personal%20Apple%20ID%20banwani%20hai.">WhatsApp Par Contact Karein</a>
+</section>
+
+<div class="card">
+<h2>Personal Apple ID Banwayein</h2>
+<div class="price">Rs. 499</div>
+<div class="features">
+<div class="feature">📱 Personal Apple ID Setup</div>
+<div class="feature">⚡ Fast & Easy Service</div>
+<div class="feature">🔐 Secure Setup Guidance</div>
+<div class="feature">💬 WhatsApp Support</div>
+</div>
+
+<h3>Apni Details Bhejein</h3>
+<form class="form" onsubmit="sendWhatsApp(event)">
+<input id="name" placeholder="Naam" required>
+<input id="email" type="email" placeholder="Email (agar ho)">
+<input id="phone" placeholder="Mobile Number" required>
+<button class="submit" type="submit">WhatsApp Par Details Bhejein</button>
+</form>
+</div>
+
+<footer>© 2026 Apple ID Studio · WhatsApp: 0308 8748583</footer>
+
+<script>
+function sendWhatsApp(e){
+ e.preventDefault();
+ const n=document.getElementById('name').value;
+ const em=document.getElementById('email').value;
+ const p=document.getElementById('phone').value;
+ const msg=`Apple ID banwane ke liye details:%0ANaam: ${n}%0AEmail: ${em}%0AMobile: ${p}`;
+ window.open(`https://wa.me/923088748583?text=${msg}`,'_blank');
+}
+</script>
+</body>
+</html>
